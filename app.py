@@ -38,6 +38,16 @@ def menu():
         print('to get id of user press 1')
         print('to create new post press 2')
         print('to retrieve all posts press 3')
+        print('to exit back to log in press 4')
+        menu_selection = int(input('selection: '))
+        if(menu_selection == 1):
+            get_id()
+        elif(menu_selection == 2):
+            new_post()
+        elif(menu_selection == 3):
+            get_all_posts()
+        elif(menu_selection == 4):
+            login()
     except:
         print('something went wrong')
 
